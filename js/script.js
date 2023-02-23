@@ -5,10 +5,6 @@ const modal = document.querySelector('#modal');
 
 btn.addEventListener('click', () => {
   const newTaskValue = newTask.value;
-  
-  if(newTaskValue == "") {
-    modal.style.display = 'flex';
-  }
 
   const p = document.createElement('p');
   const li = document.createElement('li');
