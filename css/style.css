@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: row;
+  font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+}
+
+.area {
+  background-color: rgba(255, 255, 255, 0.493);
+  border-radius: 5px;
+  padding: 50px;
+  margin: 20px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+  box-shadow: 15px 15px 10px 3px gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+.to-do {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-task {
+  padding: 10px;
+  font-size: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 0;
+  max-width: 700px;
+  height: 40px;
+  max-height: 40px;
+  background-color: rgb(190, 190, 190);
+}
+
+#new-task:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#add-task {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  background-color: rgb(190, 190, 190);
+}
+
+#add-task:hover {
+  background-color: rgb(185, 185, 185);
+  transition: 0.3s;
+}
+
+#add-task:not(:hover) {
+  transition: 0.3s;
+}
+
+#tasks {
+  list-style-type: none;
+}
+
+#tasks li {
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+li .btn-remove{
+  position: absolute;
+  right: 0;
+}
+
+li p {
+  margin-right: 40px;
+}
+
+.btn-remove {
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid gray;
+  margin-left: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  background-color: rgb(168, 168, 168);
+  transition: 0.3s;
+}
+
+.btn-remove:not(:hover) {
+  transition: 0.3s;
+}
